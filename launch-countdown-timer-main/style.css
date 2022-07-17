@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+ 
+  font-size: 62.5%;
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 700;
+ 
+}
+
+body {
+  margin: 0; 
+  padding: 0; 
+  background-color: var(--VeryDarkBlue) ;
+}
+
+:root { 
+  --GrayishBlue: hsl(237, 18%, 59%);
+  --SoftRed: hsl(345, 95%, 68%);
+  --White: hsl(0, 0%, 100%);
+  --DarkDesaturatedBlue: hsl(236, 21%, 26%);
+  --VeryDarkBlue: hsl(235, 16%, 14%);
+  --VeryBlackBlue: hsl(234, 17%, 12%);
+}
+
+.container1 {     
+    max-width: 1000px;
+    margin: auto; 
+    height:72vh; 
+    position: relative; 
+      
+    background-image: url("images/bg-stars.svg");
+     background-repeat: no-repeat;
+   
+    background-position-x:center;
+    background-position-y: bottom -70px; 
+    user-select: none;
+     background-size:1400px 550px;        
+         
+}
+
+.container2 {
+    display: block;
+    background-image:url("images/pattern-hills.svg");
+    background-repeat: 
+    no-repeat;
+    background-size: 1000px 150px;
+    
+    background-position-x:right -75px;
+    background-position-y: top;
+    max-width: 1000px;
+    margin: auto; 
+    height:25vh;         
+   
+}
+
+header { 
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 1em;  
+   
+}
+
+.header {
+  text-align: center;
+  color: var(--White);
+  font-size: 2.0rem;
+  margin-top: 6.5em;
+  text-transform:uppercase;
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 700;
+  letter-spacing: 4px; 
+ 
+}
+
+.main-container, .main-lables {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center ;
+  gap: 25px;
+  margin-top: 2em;
+}
+
+.counter {
+  min-width: 65px;
+  min-height: 65px;
+  background-color: var(--DarkDesaturatedBlue)
+
+}
+
+.main-lables {
+  margin-top: 1.0em;
+}
+
+.lable {
+  min-width: 65px;
+  text-align: center;
+  color: var(--GrayishBlue);
+  font-size: .70 rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+
