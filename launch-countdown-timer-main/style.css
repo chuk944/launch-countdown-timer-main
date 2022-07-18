@@ -80,7 +80,7 @@ header {
  
 }
 
-.main-container, .main-lables {
+.main-container, .main-lables, .link-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -108,6 +108,10 @@ header {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
+/* .link-container {
+  margin-top: 4em;
+} */
 
 
 
