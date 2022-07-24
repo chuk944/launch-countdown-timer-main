@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
 
+
+
 *,
 *::before,
 *::after {
@@ -29,6 +31,8 @@ body {
   --VeryBlackBlue: hsl(234, 17%, 12%);
 }
 
+/* Background Image setup for Container 1 and Container 2 */
+
 .container1 {     
     max-width: 1000px;
     margin: auto; 
@@ -40,7 +44,7 @@ body {
    
     background-position-x:center;
     background-position-y: bottom -70px; 
-    user-select: none;
+    
      background-size:1400px 550px;        
          
 }
@@ -52,13 +56,16 @@ body {
     no-repeat;
     background-size: 1000px 150px;
     
-    background-position-x:right -75px;
+    background-position-x:right -90px;
     background-position-y: top;
     max-width: 1000px;
     margin: auto; 
-    height:25vh;         
+    height:25vh; 
+    position: relative;        
    
 }
+
+/* Header Container 1 */
 
 header { 
   display: block;
@@ -71,47 +78,120 @@ header {
 .header {
   text-align: center;
   color: var(--White);
-  font-size: 2.0rem;
-  margin-top: 6.5em;
+  font-size: 1.5rem;
+  margin-top: 8.50em;
   text-transform:uppercase;
   font-family: 'Red Hat Text', sans-serif;
-  font-weight: 700;
-  letter-spacing: 4px; 
+  font-weight: 800;
+  letter-spacing: 6px; 
  
 }
 
-.main-container, .main-lables, .link-container {
+/* Counters Container 1 */
+
+.main-container, .main-lables {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content:center ;
   gap: 25px;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
-.counter {
+.main-counter {
   min-width: 65px;
-  min-height: 65px;
-  background-color: var(--DarkDesaturatedBlue)
+  min-height: 65px;  
+  
+  position: relative;
 
 }
 
-.main-lables {
-  margin-top: 1.0em;
+.slide-top {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  background-color:hsl(236, 21%, 22%) ;
+ 
+  border-radius: 5px;
 }
 
-.lable {
-  min-width: 65px;
+.slide-bottom {
+  display: block;
+  margin-top: .15em;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  background-color: var(--DarkDesaturatedBlue);
+  border-radius: 5px;
+  box-shadow: 0px 3px var(--VeryBlackBlue);
+
+  
+}
+
+.time {
+  display: block;
+  font-size: 3.4rem;
+  color: var(--SoftRed); 
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 700; 
+  position: absolute;
+  top: 35%;
+  left: 50%;  
+  transform: translate(-50%, -50% ); 
+  
+  
+}
+
+.test {
+  margin-top: 10px;
   text-align: center;
   color: var(--GrayishBlue);
-  font-size: .70 rem;
+  font-size: .75rem;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
-/* .link-container {
-  margin-top: 4em;
-} */
+/* Counter Lables */
 
 
 
+.lable {
+ 
+  text-align: center;
+  color: var(--GrayishBlue);
+  font-size: .75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Links in container 2 */
+
+ .link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center ;
+  gap: 30px;
+} 
+
+
+.link1,
+.link2,
+.link3 {
+  margin-top: 9em;
+   
+}  
+
+.link1:hover,
+.link2:hover,
+.link3:hover {
+  filter:brightness(200%);
+}
+
+/* footer */
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
